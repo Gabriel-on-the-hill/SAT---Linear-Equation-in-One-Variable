@@ -66,11 +66,11 @@ const QUESTIONS_DATA = {
                 explanation: "<strong>Choice A is correct.</strong><br>For a linear equation to have no solution, the coefficient of $x$ must be 0 (while the other side is non-zero).<br>$b - 2 = 0 \\rightarrow b = 2$."
             },
             {
-                id: "ac472881",
-                question: "In the equation $\\frac{12x+28}{4} = r(x-8)$, constants $r$ makes the equation have infinitely many solutions. What is the value of $r$?",
-                options: ["$3$", "$12$", "$7$", "$-8$"],
-                correctIndex: 0,
-                explanation: "<strong>Correct Answer: 3</strong><br>Simplify the left side:<br>$\\frac{12x}{4} + \\frac{28}{4} = 3x + 7$<br>So we need $3x + 7 = r(x - 8)$.<br>For infinitely many solutions, slopes must match. The coefficient of $x$ on the left is 3. So $r$ must be 3."
+                id: "25e1cfed",
+                question: "How many solutions does the equation $10(15x - 9) = -15(6 - 10x)$ have?",
+                options: ["Exactly one", "Exactly two", "Infinitely many", "Zero"],
+                correctIndex: 2,
+                explanation: "<strong>Choice C is correct.</strong><br>Distribute on both sides:<br>Left: $150x - 90$<br>Right: $-90 + 150x$<br>Since $150x - 90 = 150x - 90$, the equation is true for ALL values of $x$."
             }
         ],
         exam: [
