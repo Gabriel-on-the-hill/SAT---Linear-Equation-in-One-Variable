@@ -196,14 +196,13 @@ const QUESTIONS_DATA = {
             },
             {
                 id: "b7e6394d",
-                question: "Alan drives 100 miles/week. Car gets 25 mpg. Gas is $4/gal. He wants to save $5. Which equation finds miles to reduce ($m$)?",
                 options: ["$\\frac{25}{4}m = 95$", "$\\frac{25}{4}m = 5$", "$\\frac{4}{25}m = 95$", "$\\frac{4}{25}m = 5$"],
                 correctIndex: 3,
                 explanation: "<strong>Choice D is correct.</strong><br>Cost per mile = $\\frac{\\text{Price per gal}}{\\text{Miles per gal}} = \\frac{4}{25}$ dollars/mile.<br>Savings = (Cost per mile) × (Miles).<br>$\\frac{4}{25}m = 5$."
             },
             {
                 id: "feb78194",
-                question: "Revenue = \\$14/tablet. Wednesday Profit = \\$406. Expenses = \\$112. How many tablets ($x$) were rented?",
+                question: "Revenue = &#36;14/tablet. Wednesday Profit = &#36;406. Expenses = &#36;112. How many tablets ($x$) were rented?",
                 options: ["$21$", "$29$", "$37$", "$40$"],
                 correctIndex: 2,
                 explanation: "<strong>Correct Answer: 37</strong><br>Profit = Revenue - Expenses<br>$406 = 14x - 112$<br>$518 = 14x$<br>$x = 37$."
@@ -238,7 +237,7 @@ const QUESTIONS_DATA = {
         exam: [
             {
                 id: "93954cfa",
-                question: "One pound of grapes costs \\$2. How many dollars will $c$ pounds cost?",
+                question: "One pound of grapes costs &#36;2. How many dollars will $c$ pounds cost?",
                 options: ["$2c$", "$2+c$", "$\\frac{2}{c}$", "$\\frac{c}{2}$"],
                 correctIndex: 0,
                 explanation: "<strong>Choice A is correct.</strong><br>Cost = Price × Quantity = $2 \\times c = 2c$."
@@ -266,7 +265,7 @@ const QUESTIONS_DATA = {
             },
             {
                 id: "76f29fa5",
-                question: "Boat rent: \\$950 for first 2 hours. \\$50/hour after. Total \\$1,100. Total hours $t$. Which equation?",
+                question: "Boat rent: &#36;950 for first 2 hours. &#36;50/hour after. Total &#36;1,100. Total hours $t$. Which equation?",
                 options: ["$950(t-2)+50t=1100$", "$950(2t)+50t=1100$", "$950+50(t-2)=1100$", "$950+50(2t)=1100$"],
                 correctIndex: 2,
                 explanation: "<strong>Choice C is correct.</strong><br>Base cost: 950 (covers 2 hours).<br>Extra hours: $t - 2$.<br>Extra cost: $50(t-2)$.<br>Total: $950 + 50(t-2) = 1100$."
