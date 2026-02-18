@@ -33,7 +33,7 @@ const QUESTIONS_DATA = {
             {
                 id: "ce314070",
                 question: "If $4x - \\frac{1}{2} = -5$, what is the value of $8x - 1$?",
-                options: ["$2$", "$-9/8$", "$-5/2$", "$-10$"],
+                options: ["$2$", "$-\\frac{9}{8}$", "$-\\frac{5}{2}$", "$-10$"],
                 correctIndex: 3,
                 explanation: "<strong>Choice D is correct.</strong><br>Notice that $8x - 1$ is exactly double $4x - \\frac{1}{2}$.<br>$2(4x - \\frac{1}{2}) = 2(-5)$<br>$8x - 1 = -10$."
             },
@@ -47,7 +47,7 @@ const QUESTIONS_DATA = {
             {
                 id: "9ff10b3b",
                 question: "If $\\frac{1}{2}x - \\frac{1}{6}x = 1$, what is the value of $x$?",
-                options: ["$-4$", "$1/3$", "$3$", "$6$"],
+                options: ["$-4$", "$\\frac{1}{3}$", "$3$", "$6$"],
                 correctIndex: 2,
                 explanation: "<strong>Choice C is correct.</strong><br>Find common denominator (6):<br>$\\frac{3}{6}x - \\frac{1}{6}x = 1$<br>$\\frac{2}{6}x = 1$<br>$\\frac{1}{3}x = 1$<br>Multiply by 3: $x = 3$."
             },
@@ -125,7 +125,7 @@ const QUESTIONS_DATA = {
             },
             {
                 id: "e6cb2402",
-                question: "3(kx + 13) = \\frac{48}{17}x + 36$. If no solution, what is $k$?",
+                question: "$3(kx + 13) = \\frac{48}{17}x + 36$. If no solution, what is $k$?",
                 options: ["$16/17$", "$13/17$", "$48$", "$3$"],
                 correctIndex: 0,
                 explanation: "<strong>Correct Answer: 16/17</strong><br>Expand: $3kx + 39 = \\frac{48}{17}x + 36$.<br>For no solution, slopes must be equal, intercepts different.<br>$3k = \\frac{48}{17} \\implies k = \\frac{16}{17}$."
@@ -203,7 +203,7 @@ const QUESTIONS_DATA = {
             },
             {
                 id: "feb78194",
-                question: "Revenue = $14/tablet. Wednesday Profit = $406. Expenses = $112. How many tablets ($x$) were rented?",
+                question: "Revenue = \\$14/tablet. Wednesday Profit = \\$406. Expenses = \\$112. How many tablets ($x$) were rented?",
                 options: ["$21$", "$29$", "$37$", "$40$"],
                 correctIndex: 2,
                 explanation: "<strong>Correct Answer: 37</strong><br>Profit = Revenue - Expenses<br>$406 = 14x - 112$<br>$518 = 14x$<br>$x = 37$."
@@ -238,8 +238,8 @@ const QUESTIONS_DATA = {
         exam: [
             {
                 id: "93954cfa",
-                question: "One pound of grapes costs $2. How many dollars will $c$ pounds cost?",
-                options: ["$2c$", "$2+c$", "$2/c$", "$c/2$"],
+                question: "One pound of grapes costs \\$2. How many dollars will $c$ pounds cost?",
+                options: ["$2c$", "$2+c$", "$\\frac{2}{c}$", "$\\frac{c}{2}$"],
                 correctIndex: 0,
                 explanation: "<strong>Choice A is correct.</strong><br>Cost = Price × Quantity = $2 \\times c = 2c$."
             },
@@ -266,7 +266,7 @@ const QUESTIONS_DATA = {
             },
             {
                 id: "76f29fa5",
-                question: "Boat rent: $950 for first 2 hours. $50/hour after. Total $1,100. Total hours $t$. Which equation?",
+                question: "Boat rent: \\$950 for first 2 hours. \\$50/hour after. Total \\$1,100. Total hours $t$. Which equation?",
                 options: ["$950(t-2)+50t=1100$", "$950(2t)+50t=1100$", "$950+50(t-2)=1100$", "$950+50(2t)=1100$"],
                 correctIndex: 2,
                 explanation: "<strong>Choice C is correct.</strong><br>Base cost: 950 (covers 2 hours).<br>Extra hours: $t - 2$.<br>Extra cost: $50(t-2)$.<br>Total: $950 + 50(t-2) = 1100$."
