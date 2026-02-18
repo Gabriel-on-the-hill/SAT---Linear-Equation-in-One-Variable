@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equations — Interactive Slide Deck</title>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        <div class="card">
+            <header>
+                <div class="brand">
+                    <div class="app-icon">∑</div>
+                    <div class="brand-text">
+                        <div class="app-name">EDUTRACK HUB</div>
+                        <div class="lesson-name">Linear Equations in One Variable</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Start Screen / Concept Selection -->
+            <div id="startScreen">
+                <h1 class="fade-in">Select a Concept Module</h1>
+                <p class="subtitle fade-in-delay">Choose a path to begin the lesson.</p>
+
+                <div class="mode-toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="examModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="mode-label">Enable Exam Mode (No Feedback, Timer)</span>
+                </div>
+
+                <div class="concept-grid">
+                    <button class="concept-card" onclick="app.loadConcept('concept1')">
+                        <div class="icon">⚙️</div>
+                        <div class="info">
+                            <h3>Part 1: Pure Algebraic Mechanics</h3>
+                            <p>Master the algorithm of solving. Isolation, distribution, and special cases.</p>
+                        </div>
+                        <div class="arrow">→</div>
+                    </button>
+
+                    <button class="concept-card" onclick="app.loadConcept('concept2')">
+                        <div class="icon">🌍</div>
+                        <div class="info">
+                            <h3>Part 2: Contextual Applications</h3>
+                            <p>Translate English to Math. Real-world modeling and interpretation.</p>
+                        </div>
+                        <div class="arrow">→</div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz/Slide Area -->
+            <section id="quiz" hidden>
+                <div class="quiz-header">
+                    <button id="backBtn" class="nav-icon-btn" aria-label="Back to Menu" title="Back to Menu">
+                        ← Menu
+                    </button>
+                    <div id="progress" class="muted">Slide 1 of 10</div>
+                </div>
+
+                <div id="questionContainer" class="slide-content">
+                    <div id="questionText" class="question"></div>
+                    <div id="options" class="options-grid"></div>
+                </div>
+
+                <div id="feedbackArea" class="feedback-panel" hidden>
+                    <div id="feedbackStatus" class="status-indicator"></div>
+                    <div id="explanationText" class="explanation"></div>
+                </div>
+
+                <div class="controls">
+                    <button id="prevSlideBtn" class="btn-secondary" disabled>← Previous</button>
+                    <button id="nextSlideBtn" class="btn-primary">Next →</button>
+                </div>
+            </section>
+
+            <!-- End Screen -->
+            <div id="endScreen" hidden>
+                <h2>Module Complete!</h2>
+                <p>You have reviewed all slides in this concept.</p>
+                <div class="action-buttons">
+                    <button onclick="location.reload()" class="btn-primary">Return to Menu</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- External Libraries -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Data & App -->
+    <script src="data/questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
